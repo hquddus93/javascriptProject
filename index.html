@@ -8,20 +8,50 @@
     <link rel="stylesheet" href="./dist/main.css" />
     <link rel="stylesheet" href="./src/styles/index.scss" />
     <link rel="stylesheet" href="./src/styles/reset.scss" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+        integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">  
     <title>Document</title>
 </head>
 
 <body>
     <nav class='nav'>
-        <h1>Cool Title</h1>
+        <h1>
+            <span id="C-span">C</span>
+            <audio id="C">
+                <source src="./src/images/bass.mp3">
+            </audio>
+            <span id="S1-span">S</span>
+            <audio id="S1">
+                <source src="./src/images/hihatclosed.mp3">
+            </audio>
+            <span id="S2-span">S</span>
+            <audio id="S2">
+                <source src="./src/images/hihatopen.mp3">
+            </audio>
+            <span id="M-span">M</span>
+            <audio id="M">
+                <source src="./src/images/snare.mp3">
+            </audio>
+            <span id="R-span">R</span>
+            <audio id="R">
+                <source src="./src/images/drumsticks.mp3">
+            </audio>
+        </h1>
     </nav>
     <div class='main' >
         <div class='description'>
-            <p>Description of site. Need a cool title.</p>
+            <p class="description">Welome to CSSMR, your one-stop shop for random yet satisfying sounds and even more random facts. Hover over things to see what sound they produce.</p>
         </div>
 
         <div class="sound-animations">
-            <div class="sound-1" onmouseover="player()" onmouseleave="pause()">
+             <div class="sound-1" id="sound-1">
+                <p class='hidden' id='ocean'>The number of times a cricket chirps in 15 seconds, plus 37, will give you the current air temperature.</p>
+                <audio id='oceanAudio' preload="auto" loop>
+                    <source src= "./src/images/pouring.mp3">
+                </audio>
+             <!-- div class="sound-1" onmouseover="player()" onmouseleave="pause()">
                 <section id='sw-intro-text' class='intro'>
                     A long time ago, in a galaxy far,<br> far away....
                 </section>
@@ -46,56 +76,49 @@
                        <br>
                         <p id='text'>While the congress of the Republic endlessly debates this alarming chain of events, the Supreme Chancellor has secretly
                         dispatched a Jedi Coder, the guardian of peace and justice in the galaxy, to settle the conflict....</p>
-                    </div>
-                </div>
+                    </div> 
+                </div> -->
                 
             </div>
-            <div class="sound-2" id="drawing-surface">
-            
-         
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px" y="0px" width="125px" height="189.864px" viewBox="0 0 125 189.864"
-                    enable-background="new 0 0 125 189.864" xml:space="preserve">
-                    <path class="flame-main" fill="#F36E21" d="M76.553,186.09c0,0-10.178-2.976-15.325-8.226s-9.278-16.82-9.278-16.82s-0.241-6.647-4.136-18.465
-            	c0,0,3.357,4.969,5.103,9.938c0,0-5.305-21.086,1.712-30.418c7.017-9.333,0.571-35.654-2.25-37.534c0,0,13.07,5.64,19.875,47.54
-            	c6.806,41.899,16.831,45.301,6.088,53.985" />
-                    <path class="flame-main one" fill="#F6891F" d="M61.693,122.257c4.117-15.4,12.097-14.487-11.589-60.872c0,0,32.016,10.223,52.601,63.123
-            	c20.585,52.899-19.848,61.045-19.643,61.582c0.206,0.537-19.401-0.269-14.835-18.532S57.576,137.656,61.693,122.257z" />
-                    <path class="flame-main two" fill="#FFD04A" d="M81.657,79.192c0,0,11.549,24.845,3.626,40.02c-7.924,15.175-21.126,41.899-0.425,64.998
-            	C84.858,184.21,125.705,150.905,81.657,79.192z" />
-                    <path class="flame-main three" fill="#FDBA16" d="M99.92,101.754c0,0-23.208,47.027-12.043,80.072c0,0,32.741-16.073,20.108-45.79
-            	C95.354,106.319,99.92,114.108,99.92,101.754z" />
-                    <path class="flame-main four" fill="#F36E21" d="M103.143,105.917c0,0,8.927,30.753-1.043,46.868c-9.969,16.115-14.799,29.041-14.799,29.041
-            	S134.387,164.603,103.143,105.917z" />
-                    <path class="flame-main five" fill="#FDBA16"
-                        d="M62.049,104.171c0,0-15.645,67.588,10.529,77.655C98.753,191.894,69.033,130.761,62.049,104.171z" />
-                    <path class="flame" fill="#F36E21"
-                        d="M101.011,112.926c0,0,8.973,10.519,4.556,16.543C99.37,129.735,106.752,117.406,101.011,112.926z" />
-                    <path class="flame one" fill="#F36E21"
-                        d="M55.592,126.854c0,0-3.819,13.29,2.699,16.945C64.038,141.48,55.907,132.263,55.592,126.854z" />
-                    <path class="flame two" fill="#F36E21"
-                        d="M54.918,104.595c0,0-3.959,6.109-1.24,8.949C56.93,113.256,52.228,107.329,54.918,104.595z" />
-                </svg>
-            
-                
+            <div class="sound-2" id="sound-2">
+                    <p id='fire-text' class='hidden'>Slugs have four noses.</p>
+                    <div class="hidden" id='fire-container'></div>
+                        <audio id='fireAudio' preload="auto" loop>
+                            <source src="./src/images/campfire-1.mp3"/>
+                        </audio>
             </div>
-            <div class="sound-3" id='sound-3'>
+
+            <div  class="sound-3" id='sound-3'>
                 <canvas id='rain'></canvas>
+                <audio id="rainAudio" preload='auto' loop>
+                    <source src='./src/images/rain.mp3'/>
+                </audio>
+                <p id='rain-text' class='hidden'>The average koala sleeps 22 hours each day.
+               </p>
             </div>
         </div>
 
         <div class='other-demos'>
-            <div class='other-1'></div>
-            <div class='other-2'></div>
-            <div class='other-3'></div>
-            <div class='other-4'></div>
+            <div class='other-1'>
+                <p class='text-focus-in'>A snail breathes through its foot</p>
+            </div>
+            <div class='other-2'>
+                <p class='tracking-in-expand'>No word in the English language rhymes with month</p>
+
+                </div>
+            <div class='other-3'>
+                <p class='tracking-in-contract'>Fish can drown</p>
+
+                </div>
+            <div class='other-4'>
+                <p class='text-flicker-in-glow'>A male kangaroo is called a boomer</p></div>
         </div>
 
         <div class="third-section">
-            <div class="third-1"></div>
-            <div class="third-2"></div>
-            <div class="third-3"></div>
-            <div class="third-4"></div>
+            <div class="third-1 vibrate" >Cold water weighs less than hot water</div>
+            <div class="third-2 bounce-top">A baboon is a variety of lemon</div>
+            <div class="third-3 blink-1">Karate originated in India</div>
+            <div class="third-4 heartbeat">An octopus has three hearts</div>
         </div>
 
 
