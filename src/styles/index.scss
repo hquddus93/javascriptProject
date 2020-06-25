@@ -1,9 +1,12 @@
 .nav {
-    width: 100vw;
+    max-width: 100vw;
     height: 25vh;
     background-image: linear-gradient(rgb(54, 53, 53), rgb(79, 140, 190));
     border-left: 10px ridge purple;
     border-bottom: 10px ridge purple;
+    display: flex;
+    flex-direction: row;
+    
 
 }
 
@@ -12,7 +15,16 @@
     padding-top: 5%;
     font-family: 'Ultra', serif;
     font-size: 70px;
+    text-align: center;
+    margin: auto;
+}
 
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 0;
+  margin-right: 3%;
 }
 
 .description {
@@ -57,7 +69,7 @@
  .other-demos div {
     height: 80%;
     width: 22%;
-    background-color: hotpink;
+    background-color: rgb(12, 11, 12);
  }
 
 
@@ -396,20 +408,25 @@
 }
 
 
-.text-focus-in {
-  animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    margin: auto;
+.focus {
+  animation: focus 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+  margin: auto;
   width: 75%;
   margin-top: 30%;
   text-align: center;
   font-family: 'Acme', sans-serif;
   font-size: 30px;
+  color: rgb(80, 109, 110);
 }
 
-@keyframes text-focus-in {
+@keyframes focus {
   0% {
     filter: blur(12px);
     opacity: 0;
+  }
+   80% {
+    filter: blur(0px);
+    opacity: 1;
   }
   100% {
     filter: blur(0px);
@@ -417,17 +434,19 @@
   }
 }
 
-.tracking-in-contract {
-  animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    margin: auto;
+.tracking {
+  animation: tracking 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+  margin: auto;
   width: 75%;
   margin-top: 30%;
   text-align: center;
   font-family: 'Acme', sans-serif;
+  color: rgb(80, 109, 110);
+
 
 }
 
-@keyframes tracking-in-contract {
+@keyframes tracking {
   0% {
     letter-spacing: 1em;
     opacity: 0;
@@ -435,23 +454,29 @@
   40% {
     opacity: 0.6;
   }
+   80% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
   100% {
     letter-spacing: normal;
     opacity: 1;
   }
 }
 
-.tracking-in-expand {
-  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+.expand {
+  animation: expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
   margin: auto;
   width: 75%;
   margin-top: 30%;
   text-align: center;
   font-family: 'Acme', sans-serif;
+  color: rgb(80, 109, 110);
+
 
 }
 
-@keyframes tracking-in-expand {
+@keyframes expand {
   0% {
     letter-spacing: -0.5em;
     transform: translateZ(-700px) translateY(-500px);
@@ -460,23 +485,30 @@
   40% {
     opacity: 0.6;
   }
+
+  90% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
   100% {
     transform: translateZ(0) translateY(0);
     opacity: 1;
   }
 }
 
-.text-flicker-in-glow {
-  animation: text-flicker-in-glow 4s linear both;
+.flicker {
+  animation: flicker 4s linear infinite both;
   margin: auto;
   width: 75%;
   margin-top: 30%;
   text-align: center;
   font-family: 'Acme', sans-serif;
+  color: rgb(80, 109, 110);
+
 
 }
 
-@keyframes text-flicker-in-glow {
+@keyframes flicker {
   0% {
     opacity: 0;
   }
