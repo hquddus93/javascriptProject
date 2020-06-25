@@ -1,31 +1,3 @@
-.nav {
-    max-width: 100vw;
-    height: 25vh;
-    background-image: linear-gradient(rgb(54, 53, 53), rgb(79, 140, 190));
-    border-left: 10px ridge purple;
-    border-bottom: 10px ridge purple;
-    display: flex;
-    flex-direction: row;
-    
-
-}
-
-.nav h1 {
-    text-align: center;
-    padding-top: 5%;
-    font-family: 'Ultra', serif;
-    font-size: 70px;
-    text-align: center;
-    margin: auto;
-}
-
-.nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 0;
-  margin-right: 3%;
-}
 
 .description {
   margin-top: 2%;
@@ -129,198 +101,6 @@
 }
 
 
-.logo img {
-    width: 0;
-}
-
-.sound-1:hover {
-    .intro {
-        position: absolute;
-        margin-top: 12%;
-        margin-left: 5%;
-        z-index: 1;
-        animation: intro 6s ease-out 1s;
-        color: rgb(36, 141, 160);
-        font-weight: 400;
-        font-size: 120%;
-        opacity: 0;
-    }
-
-    @keyframes intro {
-        0% {
-            opacity: 0;
-        }
-        20% {
-            opacity: 1;
-        }
-        90% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-
-    }
-        .logo {    
-            
-            position: absolute;
-            top: 50%;
-            left: 11%;
-            z-index: 1;
-            margin: auto;
-            animation: logo 9s ease-out 9s;
-            opacity: 0;
-            
-        }
-        
-        .logo img {
-            width: 125px;
-        }
-
-        @keyframes logo {
-            0% {
-                
-                width: 7em;        
-                transform: scale(2.75);
-                opacity: 1;
-            }
-            50% {
-                opacity: 1;
-                width: 7em;      
-            }
-            100% {
-                opacity: 0;
-                transform: scale(0.1);
-                width: 7em;        
-            }
-        }
-
-       
-
-        /* Set the font, lean the board, position it */
-        #board {
-            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-            transform: perspective(150px) rotateX(25deg);
-            transform-origin: 50% 100%;
-            text-align: justify;
-            position: relative;
-            font-weight: bold;
-            overflow: hidden;
-            font-size: 200%;
-            height: 300px;
-            width: 10em;
-            bottom: 0;
-            left: 7%;
-            
-        }
-
-        #board:after {
-            position: absolute;
-            content: ' ';
-            bottom: 0;
-            left: 0;
-            right: 0;
-           
-
-        }
-
-        /* Set the scrolling animation and position it */
-        #content {
-            animation: scroll 50s linear 17s;
-            position: absolute;
-            top: 200%;
-            height: 90%;
-            bottom: 0;
-            margin: auto;
-        }
-
-
-        #title, #subtitle, #text {
-            text-align: center;
-            color: yellow;
-
-
-        }
-
-        @keyframes scroll {
-            0% {
-                top: 170%;
-            }
-            100% {
-                top: -170%;
-            }
-        }
-}
-
-
-
-#Layer_1 {
-  width: 80%;
-  height: 100%;
-  position: relative;
- 
-}
-
-.flame {
-  animation-name: flamefly;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  opacity: 0;
-  transform-origin: 50% 50% 0;
-}
-.flame.one {
-  animation-delay: 1s;
-  animation-duration: 3s;
-}
-.flame3.two{
-  animation-duration: 5s;
-  animation-delay: 1s;
-}
-
-.flame-main {
-  animation-name: flameWobble;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.flame-main.one {
-  animation-duration: 4s;
-  animation-delay: 1s;
-}
-.flame-main.two {
-  animation-duration: 3s;
-  animation-delay: 2s;
-}
-.flame-main.three {
-  animation-duration: 2.1s;
-  animation-delay: 3s;
-}
-.flame-main.four {
-  animation-duration: 3.2s;
-  animation-delay: 4s;
-}
-.flame-main.five {
-  animation-duration: 2.5s;
-  animation-delay: 5s;
-}
-@keyframes flameWobble {
-  50% {
-    transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
-  }
-}
-@keyframes flamefly {
-  0%{
-    transform: translate(0) rotate(180deg);
-  }
-   50% {
-     opacity: 1;
-  }
-  100% {
-    transform: translate(-20px, -100px) rotate(180deg);
-    opacity: 0;
-  }
-}
 
 #rain {
     width: 100%;
@@ -409,13 +189,13 @@
 
 
 .focus {
-  animation: focus 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
+  animation: focus 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite both;
   margin: auto;
   width: 75%;
   margin-top: 30%;
   text-align: center;
   font-family: 'Acme', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(80, 109, 110);
 }
 
@@ -424,6 +204,19 @@
     filter: blur(12px);
     opacity: 0;
   }
+   20% {
+    filter: blur(8px);
+    opacity: 0.3;
+  }
+   40% {
+    filter: blur(6px);
+    opacity: 0.5;
+  }
+   60% {
+    filter: blur(4px);
+    opacity: 0.7;
+  }
+  
    80% {
     filter: blur(0px);
     opacity: 1;
@@ -435,15 +228,14 @@
 }
 
 .tracking {
-  animation: tracking 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+  animation: tracking 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
   margin: auto;
   width: 75%;
-  margin-top: 30%;
+  margin-top: 35%;
   text-align: center;
   font-family: 'Acme', sans-serif;
   color: rgb(80, 109, 110);
-
-
+  font-size: 40px;
 }
 
 @keyframes tracking {
@@ -465,15 +257,14 @@
 }
 
 .expand {
-  animation: expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
+  animation: expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) infinite both;
   margin: auto;
   width: 75%;
   margin-top: 30%;
   text-align: center;
   font-family: 'Acme', sans-serif;
   color: rgb(80, 109, 110);
-
-
+  font-size: 30px;
 }
 
 @keyframes expand {
@@ -504,17 +295,24 @@
   text-align: center;
   font-family: 'Acme', sans-serif;
   color: rgb(80, 109, 110);
+  font-size: 34px;
 
 
 }
 
 @keyframes flicker {
   0% {
-    opacity: 0;
+  opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+
   }
-  10% {
+   0.1% {
     opacity: 0;
     text-shadow: none;
+  }
+  10% {
+  opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
   }
   10.1% {
     opacity: 1;
@@ -525,17 +323,14 @@
     text-shadow: none;
   }
   20% {
-    opacity: 0;
-    text-shadow: none;
-  }
-  20.1% {
     opacity: 1;
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
   }
-  20.6% {
+  20.1% {
     opacity: 0;
     text-shadow: none;
   }
+ 
   30% {
     opacity: 0;
     text-shadow: none;
@@ -639,12 +434,14 @@
   height: 15%;
   width: 15%;
   border-radius: 4px;
-
-  background-color: rebeccapurple;
+  background-color: black;
 }
 
 .vibrate {
-	animation: vibrate 0.5s linear infinite both;
+  animation: vibrate 0.5s linear infinite both;
+  color: rgb(80, 109, 110);
+  text-align: center;
+  font-family: 'Acme', sans-serif;
 }
 
 @keyframes vibrate {
@@ -684,7 +481,10 @@
 }
 
 .bounce-top {
-	animation: bounce-top 0.9s infinite;
+  animation: bounce-top 0.9s infinite;
+   color: rgb(80, 109, 110);
+  text-align: center;
+  font-family: 'Acme', sans-serif;
 }
 
 @keyframes bounce-top {
@@ -727,7 +527,11 @@
 }
 
 .blink-1 {
-	animation: blink-1 0.6s infinite;
+  animation: blink-1 0.6s infinite;
+   color: rgb(80, 109, 110);
+
+  text-align: center;
+  font-family: 'Acme', sans-serif;
 }
 
 @keyframes blink-1 {
@@ -743,7 +547,10 @@
 }
 
 .heartbeat {
-	animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+   color: rgb(80, 109, 110);
+  text-align: center;
+  font-family: 'Acme', sans-serif;
 }
 
 @keyframes heartbeat {

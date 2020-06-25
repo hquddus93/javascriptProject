@@ -1,0 +1,35 @@
+.nav {
+    max-width: 100vw;
+    height: 25vh;
+    background-image: linear-gradient(rgb(54, 53, 53), rgb(79, 140, 190));
+    border-left: 10px ridge purple;
+    border-bottom: 10px ridge purple;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.nav h1 {
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Ultra', serif;
+    font-size: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 0;
+  margin-right: 3%;
+  font-family: 'Acme', sans-serif;
+
+}
+
+.nav ul li:hover {
+  color: gray;
+  cursor: pointer;
+}

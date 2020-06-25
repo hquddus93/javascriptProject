@@ -1,7 +1,7 @@
 import "./styles/index.scss";
 import "./styles/reset.scss";
-// import anime from 'animejs/lib/anime.es.js';
-// const anime = require('animejs');
+import "./styles/nav.scss";
+
 
 document.addEventListener("keydown", (e) => {
     
@@ -80,12 +80,7 @@ function rain() {
                 }
             }
         }
-
-       
-        
         setInterval(draw, 30);
-   
-
     }
 };
 
@@ -114,7 +109,6 @@ document.getElementById('sound-3').addEventListener('mouseleave', leaveRain);
 
 function ocean() {
     document.getElementById('ocean').className = "ocean"
-    // let ocean = new Audio("pouring.mp3");
     let ocean = document.getElementById('oceanAudio');
     ocean.play();
 
@@ -125,8 +119,6 @@ function leaveOcean () {
     let ocean1 = document.getElementById('oceanAudio');
     ocean1.currentTime = 0;
     ocean1.pause();
-    // document.getElementById("oceanAudio").currentTime = 0;
-    // document.getElementById("oceanAudio").pause();
 
 }
 
@@ -165,21 +157,7 @@ function m() {
 function r() {
     document.getElementById("R").play()
 }
-function cKey() {
-    document.getElementById("C").play()
-}
-function s1Key() {
-    document.getElementById("S1").play()
-}
-function s2Key() {
-    document.getElementById("S2").play()
-}
-function mKey() {
-    document.getElementById("M").play()
-}
-function rKey() {
-    document.getElementById("R").play()
-}
+
 
 document.getElementById("C-span").addEventListener('mouseover', c)
 document.getElementById("S1-span").addEventListener('mouseover', s1)
@@ -187,3 +165,71 @@ document.getElementById("S2-span").addEventListener('mouseover', s2)
 document.getElementById("M-span").addEventListener('mouseover', m)
 document.getElementById("R-span").addEventListener('mouseover', r)
 
+function portfolio() {
+    document.getElementById('beep1Audio').play()
+}
+function github() {
+    document.getElementById('beep2Audio').play()
+
+}
+function linkedin() {
+    document.getElementById('beep3Audio').play()
+
+}
+function angellist() {
+    document.getElementById('beep4Audio').play()
+
+}
+
+document.getElementById("portfolio").addEventListener('mouseover', portfolio)
+document.getElementById("github").addEventListener('mouseover', github)
+document.getElementById("linkedin").addEventListener('mouseover', linkedin)
+document.getElementById("angellist").addEventListener('mouseover', angellist)
+
+function focus() {
+    document.getElementById("ice").play()
+    document.getElementById("focus").className = "focus"
+}
+function focusLeave() {
+    document.getElementById("ice").currentTime = 0;
+    document.getElementById("ice").pause();
+    document.getElementById("focus").className = "hidden"
+}
+document.getElementById("other-1").addEventListener('mouseover', focus)
+document.getElementById("other-1").addEventListener('mouseleave', focusLeave)
+
+function expand() {
+    document.getElementById("whoosh").play()
+    document.getElementById("expand").className = "expand"
+}
+function expandLeave() {
+    document.getElementById("whoosh").currentTime = 0;
+    document.getElementById("whoosh").pause();
+    document.getElementById("expand").className = "hidden"
+}
+document.getElementById("other-2").addEventListener('mouseover', expand)
+document.getElementById("other-2").addEventListener('mouseleave', expandLeave)
+
+function tracking() {
+    document.getElementById("coins").play()
+    document.getElementById("tracking").className = "tracking"
+}
+function trackingLeave() {
+    document.getElementById("coins").currentTime = 0;
+    document.getElementById("coins").pause();
+    document.getElementById("tracking").className = "hidden"
+}
+document.getElementById("other-3").addEventListener('mouseover', tracking)
+document.getElementById("other-3").addEventListener('mouseleave', trackingLeave)
+
+function flicker() {
+    document.getElementById("camera2").play()
+    document.getElementById("flicker").className = "flicker"
+}
+function flickerLeave() {
+    document.getElementById("camera2").currentTime = 0;
+    document.getElementById("camera2").pause();
+    document.getElementById("flicker").className = "hidden"
+}
+document.getElementById("other-4").addEventListener('mouseover', flicker)
+document.getElementById("other-4").addEventListener('mouseleave', flickerLeave)

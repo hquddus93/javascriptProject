@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./dist/main.css" />
     <link rel="stylesheet" href="./src/styles/index.scss" />
     <link rel="stylesheet" href="./src/styles/reset.scss" />
+    <link rel="stylesheet" href="./src/styles/nav.scss" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
         integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
@@ -40,10 +41,26 @@
             </audio>
         </h1>
         <ul>
-            <li>Portfolio</li>
-            <li>Github</li>
-            <li>LinkedIn</li>
-            <li>Angel List</li>
+            <li id='portfolio'>Portfolio
+                <audio id='beep1Audio' preload="auto" >
+                    <source src="./src/images/beep-1.mp3"/>
+                </audio>
+            </li>
+            <li id='github'>Github
+                <audio id='beep2Audio' preload="auto" >
+                    <source src="./src/images/beep-2.mp3" />
+                </audio>
+            </li>
+            <li id='linkedin'>LinkedIn
+            <audio id='beep3Audio' preload="auto" >
+                <source src="./src/images/beep-3.mp3" />
+            </audio>
+            </li>
+            <li id='angellist'>Angel List
+            <audio id='beep4Audio' preload="auto" >
+                <source src="./src/images/beep-4.mp3" />
+            </audio>
+            </li>
         </ul>
     </nav>
     <div class='main' >
@@ -105,26 +122,45 @@
         </div>
 
         <div class='other-demos'>
-            <div class='other-1'>
-                <p class='focus'>A snail breathes through its foot</p>
+            <div class='other-1' id='other-1'>
+                <p class='hidden' id="focus">A snail breathes through its foot</p>
+                <audio id='ice' preload='auto' loop>
+                    <source src="./src/images/ice.mp3"/>
+                </audio>
             </div>
-            <div class='other-2'>
-                <p class='expand'>No word in the English language rhymes with month</p>
-
+            <div class='other-2' id='other-2'>
+                <p class='hidden' id='expand'>No word in the English language rhymes with month</p>
+                <audio id='whoosh' preload='auto' loop>
+                    <source src='./src/images/button-2.mp3'/>
+                </audio>
                 </div>
-            <div class='other-3'>
-                <p class='tracking'>Fish can drown</p>
-
+            <div class='other-3' id='other-3'>
+                <p class ='hidden' id='tracking'>Fish can drown</p>
+                <audio id='coins' preload='auto' loop>
+                    <source src="./src/images/coins.mp3" />
+                </audio>
                 </div>
-            <div class='other-4'>
-                <p class='flicker'>A male kangaroo is called a boomer</p></div>
+            <div class='other-4' id='other-4'>
+                <p class="hidden" id='flicker'>A male kangaroo is called a boomer</p>
+                <audio id='camera2' preload='auto' loop>
+                    <source src="./src/images/camera-shutter2.mp3"/>
+                </audio>
+            </div>
         </div>
 
         <div class="third-section">
-            <div class="third-1 vibrate" >Cold water weighs less than hot water</div>
-            <div class="third-2 bounce-top">A baboon is a variety of lemon</div>
-            <div class="third-3 blink-1">Karate originated in India</div>
-            <div class="third-4 heartbeat">An octopus has three hearts</div>
+            <div class="third-1" id='third-1'>
+                <p class='vibrate'>Cold water weighs less than hot water</p>
+            </div>
+            <div class="third-2" id='third-2'>
+                <p class='bounce-top'>A baboon is a variety of lemon</p>
+            </div>
+            <div class="third-3" id='third-3'>
+                <p class="blink-1">Karate originated in India</p>
+            </div>
+            <div class="third-4 heartbeat" id='third-4'>
+                <p>An octopus has three hearts</p>
+            </div>
         </div>
 
 
