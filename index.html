@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="all">
     <nav class='nav'>
         <h1>
             <span id="C-span">C</span>
@@ -42,30 +43,39 @@
         </h1>
         <ul>
             <li id='portfolio'>Portfolio
-                <audio id='beep1Audio' preload="auto" >
-                    <source src="./src/images/beep-1.mp3"/>
-                </audio>
+                <a href="">
+                    <audio id='beep1Audio' preload="auto" >
+                        <source src="./src/images/beep-1.mp3"/>
+                    </audio>
+                </a>
             </li>
+            <a href="https://github.com/hquddus93">
             <li id='github'>Github
                 <audio id='beep2Audio' preload="auto" >
                     <source src="./src/images/beep-2.mp3" />
                 </audio>
             </li>
-            <li id='linkedin'>LinkedIn
-            <audio id='beep3Audio' preload="auto" >
-                <source src="./src/images/beep-3.mp3" />
-            </audio>
+        </a>
+            <a href="https://www.linkedin.com/in/hira-quddus-94963413b/">
+                <li id='linkedin'>LinkedIn
+                
+                <audio id='beep3Audio' preload="auto" >
+                    <source src="./src/images/beep-3.mp3" />
+                </audio>
             </li>
-            <li id='angellist'>Angel List
-            <audio id='beep4Audio' preload="auto" >
-                <source src="./src/images/beep-4.mp3" />
-            </audio>
-            </li>
+            </a>
+            <a href="https://angel.co/u/hira-quddus">
+                <li id='angellist'>Angel List
+                <audio id='beep4Audio' preload="auto" >
+                    <source src="./src/images/beep-4.mp3" />
+                </audio>
+                </li>
+            </a>
         </ul>
     </nav>
     <div class='main' >
         <div class='description'>
-            <p class="description">Welome to CSSMR, your one-stop shop for random yet satisfying sounds and even more random facts. Hover over things to see what sound they produce.</p>
+            <p class="description">Welome to CSSMR, your one-stop shop for random yet satisfying sounds and even more random facts. Hover over things to see what sound they produce. All fun facts brought to you by Snapple™</p>
         </div>
 
         <div class="sound-animations">
@@ -74,53 +84,58 @@
                 <audio id='oceanAudio' preload="auto" loop>
                     <source src= "./src/images/pouring.mp3">
                 </audio>
-             <!-- div class="sound-1" onmouseover="player()" onmouseleave="pause()">
-                <section id='sw-intro-text' class='intro'>
-                    A long time ago, in a galaxy far,<br> far away....
-                </section>
-
-                <audio preload="auto" id='audio' onkeydown="speed(e)">
-                    <source src='./src/images/starwars.mp3'>
-                </audio>
-
-                <section class='logo'>
-                    <img src='./src/images/logo.svg'></img>
-                </section>
-
-                <div id="board">
-                    <div id="content">
-                        <p id="title">Episode I</p>
-                        <p id="subtitle">THE PHANTOM CODE</p>
-                        <br>
-                        <p id='text'>Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute.</p>
-                        <br>
-                        <p id='text'>Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping
-                        to the small planet of Naboo.</p>
-                       <br>
-                        <p id='text'>While the congress of the Republic endlessly debates this alarming chain of events, the Supreme Chancellor has secretly
-                        dispatched a Jedi Coder, the guardian of peace and justice in the galaxy, to settle the conflict....</p>
-                    </div> 
-                </div> -->
                 
             </div>
+            <div class="sound-3" id='sound-3'>
+                <canvas id='rain'></canvas>
+                <audio id="rainAudio" preload='auto' loop>
+                    <source src='./src/images/rain.mp3' />
+                </audio>
+                <p id='rain-text' class='hidden'>The average koala sleeps 22 hours each day.
+                </p>
+            </div>
+
             <div class="sound-2" id="sound-2">
-                    <p id='fire-text' class='hidden'>Slugs have four noses.</p>
+                    <p id='fire' class='hidden'>Slugs have four noses.</p>
                     <div class="hidden" id='fire-container'></div>
                         <audio id='fireAudio' preload="auto" loop>
                             <source src="./src/images/campfire-1.mp3"/>
                         </audio>
             </div>
 
-            <div  class="sound-3" id='sound-3'>
-                <canvas id='rain'></canvas>
-                <audio id="rainAudio" preload='auto' loop>
-                    <source src='./src/images/rain.mp3'/>
-                </audio>
-                <p id='rain-text' class='hidden'>The average koala sleeps 22 hours each day.
-               </p>
-            </div>
+         
         </div>
 
+        <div class="facts">Check out these cool box effects</div>
+        <div class="third-section">
+            <div class="third-1" id='third-1'>
+                <p class='hidden' id='vibrate-text'>Cold water weighs less than hot water</p>
+                <audio id='vibrateAudio' preload="auto" loop>
+                    <source src="./src/images/vibratemp3.mp3" />
+                </audio>
+            </div>
+            <div class="third-2" id='third-2'>
+                <p class='hidden' id='bounce-top-text'>A baboon is a variety of lemon</p>
+                <audio id='bounce-top-audio' preload="auto" loop>
+                    <source src='./src/images/pill-bottle.mp3' />
+                </audio>
+            </div>
+            <div class="third-3" id='third-3'>
+                <p class='hidden' id="blink-text">Karate originated in India</p>
+                <audio id="blinkAudio" preload="auto" loop>
+                    <source src='./src/images/camera-shutter1.mp3' />
+                </audio>
+            </div>
+            <div class="third-4" id='third-4'>
+                <p class='hidden' id="heartbeat-text">An octopus has three hearts</p>
+                <audio id="heartbeatAudio" preload="auto" loop>
+                    <source src='./src/images/heartbeat.mp3' />
+                </audio>
+            </div>
+        
+        </div>
+
+          <div class='text-title'>Having fun? How about some text effects!</div>
         <div class='other-demos'>
             <div class='other-1' id='other-1'>
                 <p class='hidden' id="focus">A snail breathes through its foot</p>
@@ -148,24 +163,55 @@
             </div>
         </div>
 
-        <div class="third-section">
-            <div class="third-1" id='third-1'>
-                <p class='vibrate'>Cold water weighs less than hot water</p>
-            </div>
-            <div class="third-2" id='third-2'>
-                <p class='bounce-top'>A baboon is a variety of lemon</p>
-            </div>
-            <div class="third-3" id='third-3'>
-                <p class="blink-1">Karate originated in India</p>
-            </div>
-            <div class="third-4 heartbeat" id='third-4'>
-                <p>An octopus has three hearts</p>
+        <div class='keys'>
+            <div class='keys-text'>Pretty cool right? Let's have some real fun now. Check out this chart and create your own soothing sounds.</div>
+            <div class='keys-chart'>
+                <div><span class='letter'>C:</span> <span class='word'>Bass</span></div>
+                <div><span class='letter'>S:</span> <span class='word'>Open Hi Hat</span></div>
+                <div><span class='letter'>A:</span> <span class='word'>Closed Hi Hat</span></div>
+                <div><span class='letter'>M:</span> <span class='word'>Snare</span></div>
+                <div><span class='letter'>R:</span> <span class='word'>Drumsticks</span></div>
+                <div><span class='letter'>P:</span> <span class='word'>Beep 1</span></div>
+                <div><span class='letter'>G:</span> <span class='word'>Beep 2</span></div>
+                <div><span class='letter'>L:</span> <span class='word'>Beep 3</span></div>
+                <div><span class='letter'>B:</span> <span class='word'>Beep 4</span></div>
+                <div><span class='letter'>W:</span> <span class='word'>Pouring</span></div>
+                <div><span class='letter'>F:</span> <span class='word'>Fire</span></div>
+                <div><span class='letter'>D:</span> <span class='word'>Rain</span></div>
+                <div><span class='letter'>H:</span> <span class='word'>Heartbeat</span></div>
+                <div><span class='letter'>V:</span> <span class='word'>Vibrate</span></div>
+                <div><span class='letter'>I:</span> <span class='word'>Ice</span></div>
+                <div><span class='letter'>J:</span> <span class='word'>Coins</span></div>
+                <div><span class='letter'>O:</span> <span class='word'>Pills</span></div>
+                <div><span class='letter'>Y:</span> <span class='word'>Camera Snap</span></div>
+                <div><span class='letter'>X:</span> <span class='word'>Flicker</span></div>
+                <div><span class='letter'>Z:</span> <span class='word'>Whoosh</span></div>
+
+
+                
             </div>
         </div>
+     
 
 
-        <footer class='footer'></footer>
+        <footer class='footer'>
+            <p>Questions?</p>
+            <ul class='footer-list'> 
+                <a href="https://www.linkedin.com/in/hira-quddus-94963413b/">
+                    <li><i class="fab fa-linkedin"></i></li>
+                </a>
 
+                <a href="https://angel.co/u/hira-quddus">
+                    <li><i class="fab fa-angellist"></i></li>
+                </a>
+                <a href="https://github.com/hquddus93">
+                    <li><i class="fab fa-github"></i></li>
+                </a>
+                <li><i class="far fa-smile-wink"></i></li>
+            </ul>
+        </footer>
+
+    </div>
     </div>
 
     

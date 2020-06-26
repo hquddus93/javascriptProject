@@ -4,20 +4,148 @@ import "./styles/nav.scss";
 
 
 document.addEventListener("keydown", (e) => {
-    
-        console.log(e)
-           
-        if (e.keyCode === 70) {
-            let audio = document.getElementById("audio");
-            audio.playbackRate = audio.playbackRate + 0.1;
-            console.log(audio.playbackRate)
+    debugger
+        if (e.key === "v") {
+            debugger
+            let audio = document.getElementById("vibrateAudio");
+            audio.play();
+            debugger
 
-        } else if (e.keyCode === 83) {
-           
-            console.log(e.keycode)
-            let audio = document.getElementById("audio");
-            audio.playbackRate = audio.playbackRate - 0.1;
+        } else if (e.key === "c") {
+            document.getElementById("C").play();
+            
         }
+        else if (e.key === "a") {
+            document.getElementById("S1").play();
+
+        }
+        else if (e.key === "s") {
+            document.getElementById("S2").play();
+        }
+        else if (e.key === "m") {
+            document.getElementById("M").play();
+        } 
+        else if (e.key === "r") {
+            document.getElementById("R").play();
+        } 
+        else if (e.key === "p") {
+            document.getElementById("beep1Audio").play();
+        } 
+        else if (e.key === "g") {
+            document.getElementById("beep2Audio").play();
+        } 
+        else if (e.key === "l") {
+            document.getElementById("beep3Audio").play();
+        }
+        else if (e.key === "b") {
+            document.getElementById("beep4Audio").play();
+        }
+        else if (e.key === "w") {
+            document.getElementById("oceanAudio").play();
+        }
+        else if (e.key === "f") {
+            document.getElementById("fireAudio").play();
+        }
+        else if (e.key === "d") {
+            document.getElementById("rainAudio").play();
+        }
+        else if (e.key === "o") {
+            document.getElementById("bounce-top-audio").play();
+        }
+        else if (e.key === "y") {
+            document.getElementById("blinkAudio").play();
+        }
+        else if (e.key === "h") {
+            document.getElementById("heartbeatAudio").play();
+        }
+        else if (e.key === "i") {
+            document.getElementById("ice").play();
+        }
+        else if (e.key === "j") {
+            document.getElementById("coins").play();
+        }
+        else if (e.key === "x") {
+            document.getElementById("camera2").play();
+        }
+        else if (e.key === "z") {
+            document.getElementById("whoosh").play();
+        }
+
+})
+
+document.addEventListener("keyup", (e) => {
+
+    console.log(e)
+
+    if (e.key === "v") {
+        let audio = document.getElementById("vibrateAudio");
+        audio.currentTime = 0;
+        audio.pause();
+
+    } else if (e.key === "c") {
+        document.getElementById("C").currentTime = 0;
+        document.getElementById("C").pause();
+        
+    } else if (e.key === "a") {
+        document.getElementById("S1").currentTime = 0;
+        document.getElementById("S1").pause();
+
+    } else if (e.key === "s") {
+        document.getElementById("S2").currentTime = 0;
+        document.getElementById("S2").pause();
+
+    } else if (e.key === "m") {
+        document.getElementById("M").currentTime = 0;
+        document.getElementById("M").pause();
+
+    } else if (e.key === "r") {
+        document.getElementById("R").currentTime = 0;
+        document.getElementById("R").pause();
+
+    } else if (e.key === "w") {
+        document.getElementById("oceanAudio").currentTime = 0;
+        document.getElementById("oceanAudio").pause();
+
+    } else if (e.key === "f") {
+        document.getElementById("fireAudio").currentTime = 0;
+        document.getElementById("fireAudio").pause();
+
+    } else if (e.key === "d") {
+        document.getElementById("rainAudio").currentTime = 0;
+        document.getElementById("rainAudio").pause();
+
+    }
+    else if (e.key === "o") {
+        document.getElementById("bounce-top-audio").currentTime = 0;
+        document.getElementById("bounce-top-audio").pause();
+
+    }
+    else if (e.key === "y") {
+        document.getElementById("blinkAudio").currentTime = 0;
+        document.getElementById("blinkAudio").pause();
+
+    }
+    else if (e.key === "h") {
+        document.getElementById("heartbeatAudio").currentTime = 0;
+        document.getElementById("heartbeatAudio").pause();
+
+    } else if (e.key === "i") {
+        document.getElementById("ice").currentTime = 0;
+        document.getElementById("ice").pause();
+
+    } else if (e.key === "j") {
+        document.getElementById("coins").currentTime = 0;
+        document.getElementById("coins").pause();
+
+    } else if (e.key === "x") {
+        document.getElementById("camera2").currentTime = 0;
+        document.getElementById("camera2").pause();
+
+    } else if (e.key === "z") {
+        document.getElementById("whoosh").currentTime = 0;
+        document.getElementById("whoosh").pause();
+
+    }
 
 })
 
@@ -126,14 +254,14 @@ document.getElementById('sound-1').addEventListener('mouseenter', ocean);
 document.getElementById('sound-1').addEventListener('mouseleave', leaveOcean);
 
 function fire() {
-    document.getElementById('fire-container').className= 'fire-container'
-    document.getElementById('fire-text').className = 'fire-text'
+    document.getElementById('fire').className= 'fire'
+    // document.getElementById('fire-text').className = 'fire-text'
     document.getElementById('fireAudio').play()
 }
 
 function leaveFire() {
-    document.getElementById('fire-text').className = 'hidden'
-    document.getElementById('fire-container').className = 'hidden'
+    document.getElementById('fire').className = 'hidden'
+    // document.getElementById('fire-container').className = 'hidden'
     document.getElementById('fireAudio').currentTime = 0;
     document.getElementById('fireAudio').pause()
 
@@ -230,6 +358,70 @@ function flickerLeave() {
     document.getElementById("camera2").currentTime = 0;
     document.getElementById("camera2").pause();
     document.getElementById("flicker").className = "hidden"
+    
 }
 document.getElementById("other-4").addEventListener('mouseover', flicker)
 document.getElementById("other-4").addEventListener('mouseleave', flickerLeave)
+
+
+
+function vibrate() {
+    document.getElementById('third-1').classList.add("vibrate");
+    document.getElementById("vibrate-text").classList.remove('hidden')
+    document.getElementById('vibrateAudio').vo;
+    document.getElementById('vibrateAudio').play();
+}
+
+function vibrateLeave() {
+    document.getElementById('third-1').classList.remove("vibrate")
+    document.getElementById("vibrate-text").classList.add('hidden')
+    document.getElementById('vibrateAudio').currentTime = 0
+    document.getElementById('vibrateAudio').pause()
+}
+document.getElementById("third-1").addEventListener('mouseover', vibrate)
+document.getElementById("third-1").addEventListener('mouseleave', vibrateLeave)
+
+function bouncetop() {
+    document.getElementById('third-2').classList.add("bounce-top");
+    document.getElementById("bounce-top-text").classList.remove('hidden')
+    document.getElementById('bounce-top-audio').play();
+}
+
+function bouncetopLeave() {
+    document.getElementById('third-2').classList.remove("bounce-top")
+    document.getElementById("bounce-top-text").classList.add('hidden')
+    document.getElementById('bounce-top-audio').currentTime = 0
+    document.getElementById('bounce-top-audio').pause()
+}
+document.getElementById("third-2").addEventListener('mouseover', bouncetop)
+document.getElementById("third-2").addEventListener('mouseleave', bouncetopLeave)
+
+function blink() {
+    document.getElementById('third-3').classList.add("blink");
+    document.getElementById("blink-text").classList.remove('hidden')
+    document.getElementById('blinkAudio').play();
+}
+
+function blinkLeave() {
+    document.getElementById('third-3').classList.remove("blink")
+    document.getElementById("blink-text").classList.add('hidden')
+    document.getElementById('blinkAudio').currentTime = 0
+    document.getElementById('blinkAudio').pause()
+}
+document.getElementById("third-3").addEventListener('mouseover', blink)
+document.getElementById("third-3").addEventListener('mouseleave', blinkLeave)
+
+function heartbeat() {
+    document.getElementById('third-4').classList.add("heartbeat");
+    document.getElementById("heartbeat-text").classList.remove('hidden')
+    document.getElementById('heartbeatAudio').play();
+}
+
+function heartbeatLeave() {
+    document.getElementById('third-4').classList.remove("heartbeat")
+    document.getElementById("heartbeat-text").classList.add('hidden')
+    document.getElementById('heartbeatAudio').currentTime = 0
+    document.getElementById('heartbeatAudio').pause()
+}
+document.getElementById("third-4").addEventListener('mouseover', heartbeat)
+document.getElementById("third-4").addEventListener('mouseleave', heartbeatLeave)
