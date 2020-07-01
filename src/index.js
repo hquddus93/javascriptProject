@@ -368,7 +368,7 @@ document.getElementById("other-4").addEventListener('mouseleave', flickerLeave)
 function vibrate() {
     document.getElementById('third-1').classList.add("vibrate");
     document.getElementById("vibrate-text").classList.remove('hidden')
-    document.getElementById('vibrateAudio').vo;
+    // document.getElementById('vibrateAudio').vo;
     document.getElementById('vibrateAudio').play();
 }
 
