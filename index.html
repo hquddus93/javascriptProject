@@ -80,12 +80,21 @@
             </a>
         </ul>
     </nav>
+    <div class='description'>
+        <p class="description">Welome to CSSMR, your one-stop shop for random yet satisfying sounds and even more random facts. Hover over things to see what sound they produce. All fun facts brought to you by Snapple™</p>
+        
+        
+    </div>
+    
+    
     <div class='main' >
-        <div class='description'>
-            <p class="description">Welome to CSSMR, your one-stop shop for random yet satisfying sounds and even more random facts. Hover over things to see what sound they produce. All fun facts brought to you by Snapple™</p>
-        </div>
+        <div class="sound-animations" id='page-1'>
+            <div class='arrows'>
+                <i class="fa fa-chevron-left" id='back-button-1' aria-hidden="true"></i>
+                <i class="fa fa-chevron-right" id='next-button' aria-hidden="true"></i>
+            </div>
 
-        <div class="sound-animations">
+            <div class='sounds'>
              <div class="sound-1" id="sound-1">
                 <p class='hidden' id='ocean'>The number of times a cricket chirps in 15 seconds, plus 37, will give you the current air temperature.</p>
                 <audio id='oceanAudio' preload="auto" loop>
@@ -109,12 +118,20 @@
                             <source src="./src/images/campfire-1.mp3"/>
                         </audio>
             </div>
-
-         
+            </div>
         </div>
 
-        <div class="facts">Check out these cool box effects</div>
-        <div class="third-section">
+        <!-- <div class="facts">Check out these cool box effects</div> -->
+        <div class="hidden" id='page-2'>
+            <div class='arrows'>
+                <i class="fa fa-chevron-left" id='back-button-2' aria-hidden="true"></i>
+                <i class="fa fa-chevron-right" id='next-button-2' aria-hidden="true"></i>
+
+            </div>
+
+            <div class="sounds">
+
+          
             <div class="third-1" id='third-1'>
                 <p class='hidden' id='vibrate-text'>Cold water weighs less than hot water</p>
                 <audio id='vibrateAudio' preload="auto" loop>
@@ -139,38 +156,53 @@
                     <source src='./src/images/heartbeat.mp3' />
                 </audio>
             </div>
-        
-        </div>
-
-          <div class='text-title'>Having fun? How about some text effects!</div>
-        <div class='other-demos'>
-            <div class='other-1' id='other-1'>
-                <p class='hidden' id="focus">A snail breathes through its foot</p>
-                <audio id='ice' preload='auto' loop>
-                    <source src="./src/images/ice.mp3"/>
-                </audio>
-            </div>
-            <div class='other-2' id='other-2'>
-                <p class='hidden' id='expand'>No word in the English language rhymes with month</p>
-                <audio id='whoosh' preload='auto' loop>
-                    <source src='./src/images/button-2.mp3'/>
-                </audio>
-                </div>
-            <div class='other-3' id='other-3'>
-                <p class ='hidden' id='tracking'>Fish can drown</p>
-                <audio id='coins' preload='auto' loop>
-                    <source src="./src/images/coins.mp3" />
-                </audio>
-                </div>
-            <div class='other-4' id='other-4'>
-                <p class="hidden" id='flicker'>A male kangaroo is called a boomer</p>
-                <audio id='camera2' preload='auto' loop>
-                    <source src="./src/images/camera-shutter2.mp3"/>
-                </audio>
             </div>
         </div>
 
-        <div class='keys'>
+          <!-- <div class='text-title'>Having fun? How about some text effects!</div> -->
+        <div class='hidden' id='page-3'>
+            <div class="arrows">
+                <i class="fa fa-chevron-left" id='back-button-3' aria-hidden="true"></i>
+                <i id='next-button-3' class="fa fa-chevron-right" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="sounds-3">
+                <div class='other-1' id='other-1'>
+                    <p class='hidden' id="focus">A snail breathes through its foot</p>
+                    <audio id='ice' preload='auto' loop>
+                        <source src="./src/images/ice.mp3"/>
+                    </audio>
+                </div>
+                <div class='other-2' id='other-2'>
+                    <p class='hidden' id='expand'>No word in the English language rhymes with month</p>
+                    <audio id='whoosh' preload='auto' loop>
+                        <source src='./src/images/button-2.mp3'/>
+                    </audio>
+                    </div>
+                <div class='other-3' id='other-3'>
+                    <p class ='hidden' id='tracking'>Fish can drown</p>
+                    <audio id='coins' preload='auto' loop>
+                        <source src="./src/images/coins.mp3" />
+                    </audio>
+                    </div>
+                <div class='other-4' id='other-4'>
+                    <p class="hidden" id='flicker'>A male kangaroo is called a boomer</p>
+                    <audio id='camera2' preload='auto' loop>
+                        <source src="./src/images/camera-shutter2.mp3"/>
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+
+        <div class='hidden'id='page-4'>
+            <div class="arrows">
+                <i id='back-button-4' class="fa fa-chevron-left" aria-hidden="true"></i>
+                 <i id='next-button-4' class="fa fa-chevron-right" aria-hidden="true"></i>      
+            </div>
+
+        <div class="sounds-2">
             <div class='keys-text'>Pretty cool right? Let's have some real fun now. Check out this chart and create your own soothing sounds.</div>
             <div class='keys-chart'>
                 <div><span class='letter'>C:</span> <span class='word'>Bass</span></div>
@@ -198,6 +230,8 @@
                 
             </div>
         </div>
+        </div>
+    </div>
      
 
 
@@ -218,7 +252,6 @@
             </ul>
         </footer>
 
-    </div>
     </div>
 
     

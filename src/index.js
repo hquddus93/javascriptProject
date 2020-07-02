@@ -8,7 +8,7 @@ document.addEventListener("keydown", (e) => {
         if (e.key === "v") {
             debugger
             let audio = document.getElementById("vibrateAudio");
-            audio.play();
+            (audio.play());
             debugger
 
         } else if (e.key === "c") {
@@ -152,7 +152,7 @@ document.addEventListener("keyup", (e) => {
 
 
 function rain() {
-    var canvas = document.getElementById('rain')
+    setTimeout( () => {var canvas = document.getElementById('rain')
     canvas.className = 'rain'
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -209,7 +209,7 @@ function rain() {
             }
         }
         setInterval(draw, 30);
-    }
+    }}, 200)
 };
 
 function leaveRain() {
@@ -222,12 +222,12 @@ function leaveRain() {
 }
 
 function rainSound() {
-    document.getElementById('rain-text').className = 'rain-text'
+   document.getElementById('rain-text').className = 'rain-text'
 
     let rain = document.getElementById('rainAudio');
+    rain.pause(100);
     rain.play();
 }
-
 
 
 document.getElementById('sound-3').addEventListener('mouseenter', rain);
@@ -425,3 +425,64 @@ function heartbeatLeave() {
 }
 document.getElementById("third-4").addEventListener('mouseover', heartbeat)
 document.getElementById("third-4").addEventListener('mouseleave', heartbeatLeave)
+
+function handleClickNext(e) {
+    debugger
+    
+    if (e.target.parentElement.parentElement.id === 'page-1') {
+        debugger
+        document.getElementById('page-1').className='hidden'
+        document.getElementById('page-2').className='third-section'
+        debugger
+    } 
+    else if (e.target.parentElement.parentElement.id === 'page-2') {
+        debugger
+        document.getElementById('page-2').className='hidden'
+        document.getElementById('page-3').className='other-demos'
+    }
+    else if (e.target.parentElement.parentElement.id === 'page-3') {
+        debugger
+        document.getElementById('page-3').className='hidden'
+        document.getElementById('page-4').className='keys'
+    } 
+    else if (e.target.parentElement.parentElement.id === 'page-4') {
+        debugger
+        document.getElementById('page-4').className='hidden'
+        document.getElementById('page-1').className='sound-animations'
+    } 
+}
+
+document.getElementById('next-button').addEventListener('click', handleClickNext)
+document.getElementById('next-button-2').addEventListener('click', handleClickNext)
+document.getElementById('next-button-3').addEventListener('click', handleClickNext)
+document.getElementById('next-button-4').addEventListener('click', handleClickNext)
+
+function handleClickBack(e) {
+
+    if (e.target.parentElement.parentElement.id === 'page-1') {
+        debugger
+        document.getElementById('page-1').className = 'hidden'
+        document.getElementById('page-4').className = 'keys'
+        debugger
+    }
+    else if (e.target.parentElement.parentElement.id === 'page-2') {
+        debugger
+        document.getElementById('page-2').className = 'hidden'
+        document.getElementById('page-1').className = 'sound-animations'
+    }
+    else if (e.target.parentElement.parentElement.id === 'page-3') {
+        debugger
+        document.getElementById('page-3').className = 'hidden'
+        document.getElementById('page-2').className = 'third-section'
+    }
+    else if (e.target.parentElement.parentElement.id === 'page-4') {
+        debugger
+        document.getElementById('page-4').className = 'hidden'
+        document.getElementById('page-3').className = 'other-demos'
+    }
+}
+
+document.getElementById('back-button-1').addEventListener('click', handleClickBack)
+document.getElementById('back-button-2').addEventListener('click', handleClickBack)
+document.getElementById('back-button-3').addEventListener('click', handleClickBack)
+document.getElementById('back-button-4').addEventListener('click', handleClickBack)
