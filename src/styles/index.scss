@@ -606,10 +606,10 @@
 
 
 #vibrate-text {
-   width: 80%;
+  width: 80%;
   text-align: center;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 10%;
   font-size: 30px;
 }
 
@@ -848,4 +848,9 @@
   justify-content: space-between;
   font-size: 30px;
   margin-left: 5%;
+}
+
+.fab {
+  text-align: none;
+  color: rgb(63, 7, 95);
 }
