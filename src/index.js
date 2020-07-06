@@ -494,3 +494,22 @@ document.getElementById('back-button-1').addEventListener('click', handleClickBa
 document.getElementById('back-button-2').addEventListener('click', handleClickBack)
 document.getElementById('back-button-3').addEventListener('click', handleClickBack)
 document.getElementById('back-button-4').addEventListener('click', handleClickBack)
+
+
+function githubFooter() {
+    document.getElementById('switch1Audio').play()
+
+}
+function linkedinFooter() {
+    document.getElementById('switch2Audio').play()
+
+}
+function angellistFooter() {
+    document.getElementById('switch3Audio').play()
+
+}
+
+
+document.getElementById("switch1").addEventListener('mouseover', githubFooter)
+document.getElementById("switch2").addEventListener('mouseover', linkedinFooter)
+document.getElementById("switch3").addEventListener('mouseover', angellistFooter)
