@@ -428,27 +428,33 @@ document.getElementById("third-4").addEventListener('mouseleave', heartbeatLeave
 
 function handleClickNext(e) {
     debugger
-    
+    document.getElementById('forwardAudio').play()
+
     if (e.target.parentElement.parentElement.id === 'page-1') {
         debugger
         document.getElementById('page-1').className='hidden'
         document.getElementById('page-2').className='third-section'
+
         debugger
     } 
     else if (e.target.parentElement.parentElement.id === 'page-2') {
         debugger
         document.getElementById('page-2').className='hidden'
         document.getElementById('page-3').className='other-demos'
+
     }
     else if (e.target.parentElement.parentElement.id === 'page-3') {
         debugger
         document.getElementById('page-3').className='hidden'
         document.getElementById('page-4').className='keys'
+
     } 
     else if (e.target.parentElement.parentElement.id === 'page-4') {
         debugger
         document.getElementById('page-4').className='hidden'
         document.getElementById('page-1').className='sound-animations'
+        document.getElementById('forwardAudio').play()
+
     } 
 }
 
@@ -459,26 +465,28 @@ document.getElementById('next-button-4').addEventListener('click', handleClickNe
 
 function handleClickBack(e) {
 
+    document.getElementById('backwardAudio').play()
+
     if (e.target.parentElement.parentElement.id === 'page-1') {
         debugger
         document.getElementById('page-1').className = 'hidden'
-        document.getElementById('page-4').className = 'keys'
+        document.getElementById('page-4').className = 'keys2'
         debugger
     }
     else if (e.target.parentElement.parentElement.id === 'page-2') {
         debugger
         document.getElementById('page-2').className = 'hidden'
-        document.getElementById('page-1').className = 'sound-animations'
+        document.getElementById('page-1').className = 'sound-animations2'
     }
     else if (e.target.parentElement.parentElement.id === 'page-3') {
         debugger
         document.getElementById('page-3').className = 'hidden'
-        document.getElementById('page-2').className = 'third-section'
+        document.getElementById('page-2').className = 'third-section2'
     }
     else if (e.target.parentElement.parentElement.id === 'page-4') {
         debugger
         document.getElementById('page-4').className = 'hidden'
-        document.getElementById('page-3').className = 'other-demos'
+        document.getElementById('page-3').className = 'other-demos2'
     }
 }
 

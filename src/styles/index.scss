@@ -54,8 +54,31 @@
     margin-bottom: 5vh;
 }
 
+.sound-animations2 {
+  animation: slide-in-left 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
 .other-demos {
     animation: slide-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.other-demos2 {
+    animation: slide-in-left 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
     height: 60vh;
     width: 100%;
     display: flex;
@@ -123,6 +146,17 @@
  
 
 .third-section {
+	animation: slide-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  
+}
+.third-section2 {
 	animation: slide-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
   height: 60vh;
   width: 100%;
@@ -773,7 +807,7 @@
 .keys {
 
 	/*animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;*/
-	animation: slide-in-right 1s ease-out;
+	animation: slide-in-right .5s ease-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -782,6 +816,20 @@
   color: rgb(63, 7, 95);
   height: 60vh;
 }
+.keys2 {
+
+	/*animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;*/
+	animation: slide-in-left .5s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Acme', sans-serif;
+  color: rgb(63, 7, 95);
+  height: 60vh;
+}
+
+
 @keyframes slide-in-right {
 
   0% {
@@ -796,6 +844,22 @@
   }
 
 }
+
+@keyframes slide-in-left {
+    0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+
+}
+
+
 /*@keyframes slide-in-right {
   0% {
     -webkit-transform: translateY(1000px);
