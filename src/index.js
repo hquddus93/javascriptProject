@@ -70,6 +70,21 @@ document.addEventListener("keydown", (e) => {
         else if (e.key === "z") {
             document.getElementById("whoosh").play();
         }
+        else if (e.key === "u") {
+            document.getElementById("forwardAudio").play();
+        }
+        else if (e.key === "t") {
+            document.getElementById("backwardAudio").play();
+        }
+        else if (e.key === "q") {
+            document.getElementById("switch1Audio").play();
+        }
+        else if (e.key === "k") {
+            document.getElementById("switch2Audio").play();
+        }
+        else if (e.key === "n") {
+            document.getElementById("switch3Audio").play();
+        }
 
 })
 

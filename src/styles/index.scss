@@ -157,7 +157,7 @@
   
 }
 .third-section2 {
-	animation: slide-in-right 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	animation: slide-in-left 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
   height: 60vh;
   width: 100%;
   display: flex;
@@ -873,7 +873,7 @@
   background-color: rgba(244, 165, 96, 0.568);
   border: 2px solid rgb(63, 7, 95);
   border-radius: 3%;
-  height: 50%;
+  height: 60%;
   flex-wrap: wrap;
   width: 30%;
   margin: auto;
@@ -903,5 +903,10 @@
 }
 
 .fab:hover {
+  color: plum;
+}
+
+.fa-chevron-left:hover, .fa-chevron-right:hover {
+  cursor: pointer;
   color: plum;
 }
