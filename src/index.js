@@ -4,12 +4,12 @@ import "./styles/nav.scss";
 
 
 document.addEventListener("keydown", (e) => {
-    debugger
+   
         if (e.key === "v") {
-            debugger
+           
             let audio = document.getElementById("vibrateAudio");
             (audio.play());
-            debugger
+           
 
         } else if (e.key === "c") {
             document.getElementById("C").play();
@@ -89,8 +89,6 @@ document.addEventListener("keydown", (e) => {
 })
 
 document.addEventListener("keyup", (e) => {
-
-    console.log(e)
 
     if (e.key === "v") {
         let audio = document.getElementById("vibrateAudio");
@@ -442,30 +440,30 @@ document.getElementById("third-4").addEventListener('mouseover', heartbeat)
 document.getElementById("third-4").addEventListener('mouseleave', heartbeatLeave)
 
 function handleClickNext(e) {
-    debugger
+   
     document.getElementById('forwardAudio').play()
 
     if (e.target.parentElement.parentElement.id === 'page-1') {
-        debugger
+       
         document.getElementById('page-1').className='hidden'
         document.getElementById('page-2').className='third-section'
 
-        debugger
+       
     } 
     else if (e.target.parentElement.parentElement.id === 'page-2') {
-        debugger
+       
         document.getElementById('page-2').className='hidden'
         document.getElementById('page-3').className='other-demos'
 
     }
     else if (e.target.parentElement.parentElement.id === 'page-3') {
-        debugger
+       
         document.getElementById('page-3').className='hidden'
         document.getElementById('page-4').className='keys'
 
     } 
     else if (e.target.parentElement.parentElement.id === 'page-4') {
-        debugger
+       
         document.getElementById('page-4').className='hidden'
         document.getElementById('page-1').className='sound-animations'
         document.getElementById('forwardAudio').play()
@@ -483,23 +481,19 @@ function handleClickBack(e) {
     document.getElementById('backwardAudio').play()
 
     if (e.target.parentElement.parentElement.id === 'page-1') {
-        debugger
+       
         document.getElementById('page-1').className = 'hidden'
         document.getElementById('page-4').className = 'keys2'
-        debugger
     }
     else if (e.target.parentElement.parentElement.id === 'page-2') {
-        debugger
         document.getElementById('page-2').className = 'hidden'
         document.getElementById('page-1').className = 'sound-animations2'
     }
     else if (e.target.parentElement.parentElement.id === 'page-3') {
-        debugger
         document.getElementById('page-3').className = 'hidden'
         document.getElementById('page-2').className = 'third-section2'
     }
     else if (e.target.parentElement.parentElement.id === 'page-4') {
-        debugger
         document.getElementById('page-4').className = 'hidden'
         document.getElementById('page-3').className = 'other-demos2'
     }
