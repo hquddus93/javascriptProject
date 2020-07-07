@@ -278,23 +278,6 @@
 }
 
 
-/*.fire-container {
-  overflow: hidden;
-  height: 50%;
-  width: 100%;
-  z-index: -2;
-  margin-top: 35%;
-  background-color: transparent;
-  background-image: url("../images//fire.png");
-  background-size: 270%;
-  background-position: 80%; 
-  animation-name: flameMove;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}*/
-
-
 .fire {
   color: rgba(255, 255, 255, .1);
   font-family: 'Acme', sans-serif;
@@ -332,37 +315,6 @@
 
   }
 }
-/* @keyframes flameMove {
-
-  0% {
-    transform: scaleY(1.2) rotate(1deg);
-  }
-
-  50% {
-    transform: scaleY(1.5) rotate(-1deg);
-  }
-
-   75% {
-    transform: scaleY(1.4) rotate(1deg);
-  }
-
-  100% {
-    transform: scaleY(1.2) rotate(-1deg);
-  }
-
-} */
-
-/*.fire-text {
-  color: rgb(187, 169, 3);
-  position: relative;
-  font-size: 28px;
-  text-transform: uppercase;
-  z-index: 2;
-  top: 20%;
-  font-family: 'Acme', sans-serif;
-  text-align: center;
-
-} */
 
 
 .other-3, .other-1, .other-2, .other-4 {

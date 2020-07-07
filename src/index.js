@@ -5,12 +5,9 @@ import "./styles/nav.scss";
 
 document.addEventListener("keydown", (e) => {
    
-        if (e.key === "v") {
-           
+        if (e.key === "v") { 
             let audio = document.getElementById("vibrateAudio");
             (audio.play());
-           
-
         } else if (e.key === "c") {
             document.getElementById("C").play();
             
